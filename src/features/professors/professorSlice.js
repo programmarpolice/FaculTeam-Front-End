@@ -1,8 +1,4 @@
-<<<<<<< HEAD:src/features/professors/professorSlice.js
-import api from "../../store/api";
-=======
 import api from "../store/api";
->>>>>>> 364a9f2ff1b3fb936ec913b2f3f2888f5246f020:src/components/professorSlice.js
 const professorApi = api.injectEndpoints({
   endpoints: (build) => ({
     getProfessors: build.query({

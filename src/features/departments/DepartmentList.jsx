@@ -1,12 +1,5 @@
 import { useGetDepartmentsQuery } from "./departmentSlice";
 import { useNavigate } from "react-router-dom"; //exported as an object(not default)
-<<<<<<< HEAD:src/features/departments/DepartmentList.jsx
-=======
-import { DepartmentDetails } from "./DepartmentDetails";
-
-import { Navbar } from "../store/Navbar";
-import { Footer } from "./Footer";
->>>>>>> 364a9f2ff1b3fb936ec913b2f3f2888f5246f020:src/components/DepartmentList.jsx
 
 export function DepartmentList() {
   const navigate = useNavigate();

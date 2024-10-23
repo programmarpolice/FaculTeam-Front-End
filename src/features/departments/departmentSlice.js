@@ -1,9 +1,4 @@
-<<<<<<< HEAD:src/features/departments/departmentSlice.js
-import api from "../../store/api";
-
-=======
 import api from "../store/api";
->>>>>>> 364a9f2ff1b3fb936ec913b2f3f2888f5246f020:src/components/departmentSlice.js
 const departmentApi = api.injectEndpoints({
   endpoints: (build) => ({
     getDepartments: build.query({
