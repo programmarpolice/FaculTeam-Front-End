@@ -1,10 +1,18 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import Navbar from "./store/Navbar";
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 import "./index.css";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Navbar />
-  </StrictMode>
+import { Provider } from "react-redux";
+import store from "./store/store";
+
+import { RouterProvider } from "react-router-dom";
+import router from "./store/router";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  </React.StrictMode>
 );

@@ -1,4 +1,4 @@
-import api from "./api";
+import api from "../store/api";
 const departmentApi = api.injectEndpoints({
   endpoints: (build) => ({
     getDepartments: build.query({

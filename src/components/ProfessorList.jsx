@@ -2,10 +2,10 @@ import { useGetProfessorsQuery } from "./professorSlice";
 import { useNavigate } from "react-router-dom"; //exported as an object(not default)
 import { ProfessorDetails } from "./ProfessorDetails";
 
-import { NavBar } from "./NavBar";
+import { Navbar } from "../store/Navbar";
 import { Footer } from "./Footer";
 
-export default function ProfessorList() {
+export function ProfessorList() {
   const navigate = useNavigate();
   const { data: professors = [], isLoading, error } = useGetProfessorsQuery();
 

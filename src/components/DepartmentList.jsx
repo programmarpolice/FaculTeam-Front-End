@@ -2,10 +2,10 @@ import { useGetDepartmentsQuery } from "./departmentSlice";
 import { useNavigate } from "react-router-dom"; //exported as an object(not default)
 import { DepartmentDetails } from "./DepartmentDetails";
 
-import { NavBar } from "./NavBar";
+import { Navbar } from "../store/Navbar";
 import { Footer } from "./Footer";
 
-export default function DepartmentList() {
+export function DepartmentList() {
   const navigate = useNavigate();
   const { data: departments = [], isLoading, error } = useGetDepartmentsQuery();
 
